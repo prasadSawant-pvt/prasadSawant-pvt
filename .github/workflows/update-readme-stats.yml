@@ -22,8 +22,8 @@ jobs:
 
       - name: Commit & push generated images
         run: |
-          git config --global user.email "you@example.com"  # Use your email
-          git config --global user.name "Your Name"  # Use your GitHub username
+          git config --global user.email "prasadsawant.pvt@gmail.com"  # Use your email
+          git config --global user.name "prasadSawant-pvt"  # Use your GitHub username
           git add stats.svg streak.svg
           git commit -m "Update README stats"
           git push
