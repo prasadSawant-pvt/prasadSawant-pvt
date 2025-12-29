@@ -42,8 +42,8 @@
 ### 📈 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=prasadSawant-pvt&show_icons=true&theme=tokyonight" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=prasadSawant-pvt&theme=tokyonight" width="48%" />
+  <img src="stats.svg" width="48%" />
+  <img src="streak.svg" width="48%" />
 </p>
 
 ---
