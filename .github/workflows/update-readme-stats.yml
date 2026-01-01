@@ -1,29 +1,29 @@
-name: Update README Stats
+# name: Update README Stats
 
-on:
-  schedule:
-    - cron: '0 * * * *' # Every hour
-  push:
-    branches:
-      - main # You can specify other branches if needed
+# on:
+#   schedule:
+#     - cron: '0 * * * *' # Every hour
+#   push:
+#     branches:
+#       - main # You can specify other branches if needed
 
-jobs:
-  update-readme:
-    runs-on: ubuntu-latest
+# jobs:
+#   update-readme:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v2
 
-      - name: Generate GitHub Stats and Streak Images
-        run: |
-          curl -s https://github-readme-stats.vercel.app/api?username=prasadSawant-pvt&show_icons=true&theme=tokyonight > stats.svg
-          curl -s https://github-readme-streak-stats.herokuapp.com?user=prasadSawant-pvt&theme=tokyonight > streak.svg
+#       - name: Generate GitHub Stats and Streak Images
+#         run: |
+#           curl -s https://github-readme-stats.vercel.app/api?username=prasadSawant-pvt&show_icons=true&theme=tokyonight > stats.svg
+#           curl -s https://github-readme-streak-stats.herokuapp.com?user=prasadSawant-pvt&theme=tokyonight > streak.svg
 
-      - name: Commit & push generated images
-        run: |
-          git config --global user.email "prasadsawant.pvt@gmail.com"  # Use your email
-          git config --global user.name "prasadSawant-pvt"  # Use your GitHub username
-          git add stats.svg streak.svg
-          git commit -m "Update README stats"
-          git push
+#       - name: Commit & push generated images
+#         run: |
+#           git config --global user.email "prasadsawant.pvt@gmail.com"  # Use your email
+#           git config --global user.name "prasadSawant-pvt"  # Use your GitHub username
+#           git add stats.svg streak.svg
+#           git commit -m "Update README stats"
+#           git push
